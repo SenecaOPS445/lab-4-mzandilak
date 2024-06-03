@@ -2,11 +2,11 @@
 # Author ID: mzandilak
 
 def is_digits(sobj):
-    # place code here - loop through each character in sobj 
     for char in sobj:
-        if char not in '9876543210':
+        if char < '0' or char > '9':
             return False
     return True
+
 
 if __name__ == '__main__':
     test_list = ['x3058','3058','8503x','8503']
